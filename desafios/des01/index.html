@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: aliceblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema para verificar Nacionalidade</h1>
+    <p>informe o seu pais de origem</p>
+    <input type="text" id="txtpais">
+    <input type="button" value="Verificar" onclick="verifica()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verifica() {
+            var nacionalidade = document.getElementById("txtpais")
+
+            if (nacionalidade.value == 'Brasil') {
+                res.innerHTML = `Seu pais de origem é ${nacionalidade.value} e voce é brasileiro`
+            } else {
+                res.innerHTML = `Seu pais de origem é ${nacionalidade.value} e voce é estrangeiro`
+            }
+            
+        }
+    </script>
+</body>
+</html>

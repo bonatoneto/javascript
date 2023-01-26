@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            background-color: rgb(76, 85, 24);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>bora aprender de verdade essa bagaça</p>
+    <script>
+        var numero1 = Number.parseInt(prompt('Digite um número:'))
+        //pode ser so Number que o JS se vira para saber qual o tipo primitivo do numero
+        var numero2 = Number(prompt('Digite outro número:'))
+        var resultado = numero1 + numero2
+        alert(`O resultado dessa soma é ${resultado}`)
+
+        //Revisao
+        //Para converter uma string em um numero -> Number
+        //Para concatenar usar o sinal de        -> +
+        //Melhor forma de inserir variaveis em uma string é utilizando template string -> `${}`
+
+    </script>
+</body>
+</html>

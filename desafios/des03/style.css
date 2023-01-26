@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(65, 89, 194);
+}
+
+h1 {
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    margin: auto;
+    border-radius: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+footer > a {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-decoration: none;
+    color: aliceblue;
+
+}

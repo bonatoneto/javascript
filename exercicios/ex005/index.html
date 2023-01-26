@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+        #mensagem {
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            border-radius: 24px;
+            margin: 48px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM (Document Object Model)</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong></p>
+    <div id="mensagem"> 
+        <h1>Clique em mim!</h1>
+    </div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerHTML)
+
+        /*
+        var div1 = window.document.getElementById('mensagem')
+        div1.style.backgroundColor = 'gray'
+        */
+
+        var div1 = window.document.querySelector('#mensagem')
+        div1.style.backgroundColor = 'gray'
+        div1.addEventListener('click', clicar)
+        div1.addEventListener('mouseenter', entrar)
+        div1.addEventListener('mouseout', saiu)
+
+        function clicar() {
+            div1.innerHTML = 'Clicou!'
+            div1.style.backgroundColor = 'blue'
+        }
+        function entrar() {
+            div1.innerHTML = 'Entrou'
+            div1.style.backgroundColor = 'red'
+        }
+        function saiu() {
+            div1.innerHTML = 'Saiu'
+            div1.style.backgroundColor = 'yellow'
+        }
+    </script>
+</body>
+</html>

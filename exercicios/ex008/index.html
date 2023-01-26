@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas do DETRAN</h1>
+    <p>informe a velocidade do veiculo</p>
+    <input type="number" name="txtvel" id="txtvelocidade">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+    <div id="calc"></div>
+    <script>
+        function calcular() {
+            var txtv = window.document.getElementById("txtvelocidade")
+            var res = window.document.getElementById('res')
+            var vel = Number(txtv.value)
+
+            res.innerHTML = `Sua velocidade atual é de ${vel}Km/h`
+
+            if (vel > 60) {
+                calc.innerHTML = 'Voce esta <strong>MULTADO</strong> por excesso de velocidade!'
+            } else {
+                calc.innerHTML = 'Dirija sempre com cuidado!'
+            }
+        }
+    </script>
+</body>
+</html>

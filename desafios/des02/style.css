@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(65, 89, 194);
+}
+
+h1 {
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    height: auto;
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    border-radius: 24px;
+}
+
+#msg {
+    text-align: center;
+    padding: 24px;
+}
+
+#imagem {
+    width: 350px;
+   display: block;
+   margin: auto;
+
+}
+
+footer > a {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
