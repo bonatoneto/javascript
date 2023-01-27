@@ -2,36 +2,71 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: rgb(65, 89, 194);
+    background-color: skyblue;
 }
 
-h1 {
-    padding: 40px;
+header {
     text-align: center;
-    color: white;
+    padding: 50px;
+    color: #ffffff;
 }
 
 main {
+    background-color: #ffffff;
     height: 450px;
     width: 450px;
-    background-color: white;
     margin: auto;
-    border-radius: 24px;
+    border-radius: 28px;
+}
+
+#msg {
+    padding: 24px;
+}
+
+#msg > p {
+    margin-bottom: 16px;
+}
+
+#imagem {
+    padding-bottom: 16px;
+    display: block;
+    margin: auto;
+}
+
+.bt-verificar {
+    display: block;
+    margin: auto;
+}
+
+#res > #mensagem {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#res > #mensagem2 {
+    display: block;
+    text-align: center;
+    margin: auto;
 }
 
 footer {
+    display: flex;
     text-align: center;
-    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
 }
 
-footer > a {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+footer a {
     text-decoration: none;
-    color: aliceblue;
-
+    color: #ffffff;
+    font-weight: bold;
 }

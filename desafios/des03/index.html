@@ -7,7 +7,7 @@
     <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="verificar()">
     <header>
         <h1>Verificador de Idade</h1>
     </header>
@@ -25,11 +25,14 @@
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input class="bt-verificar" type="button" value="Verificar" onclick="verificar()">
             </p>
+            <div id="mensagem"></div>
         </div>
         <div id="res">
+            <div id="mensagem"></div>
             <img id="imagem" src="" alt="">
+            <div id="mensagem2">Preencha os dados para ver o resultado!</div>
         </div>
     </main>
     <footer>

@@ -4,10 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: rgb(65, 89, 194);
-}
-
 h1 {
     padding: 40px;
     text-align: center;
@@ -24,6 +20,11 @@ main {
 }
 
 #msg {
+    text-align: center;
+    padding: 24px;
+}
+
+#msg2 {
     text-align: center;
     padding: 24px;
 }
