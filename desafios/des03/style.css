@@ -44,18 +44,14 @@ main {
 }
 
 #res > #mensagem {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#res > #mensagem2 {
     display: block;
     text-align: center;
     margin: auto;
 }
 
+img #foto {
+    padding: 20px;
+}
 footer {
     display: flex;
     text-align: center;
